@@ -17,7 +17,7 @@ def chinese_remainder_theorem(items):
     for a, n in items:
         N *= n
  
-    # Find the solution (mod N)
+   
     result = 0
     for a, n in items:
         m = N // n
@@ -25,9 +25,7 @@ def chinese_remainder_theorem(items):
         if d != 1:
             raise "Input not pairwise co-prime"
         result += a * s * m
- 
-    # Make sure we return the canonical solution.
-    return result % N
+
  
  
 def extended_gcd(a, b):
