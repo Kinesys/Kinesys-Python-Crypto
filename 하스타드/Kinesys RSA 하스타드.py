@@ -1,3 +1,4 @@
+#Kinesys RSA 하스타드 암호화(n값과 c값이 3개씩 주어지며 e값이 작은 경우)
 import gmpy2
 gmpy2.get_context().precision = 4096
  
